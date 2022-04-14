@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { GifdataService } from '../../gifdata.service';
 
 @Component({
   selector: 'app-trending',
@@ -6,10 +7,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./trending.component.css']
 })
 export class TrendingComponent implements OnInit {
+  gifs: any[] = []
 
-  constructor() { }
+  constructor(private dataService: GifdataService) { }
 
   ngOnInit(): void {
+    this.dataService.getTrendingGifs()
+    .subscribe((response: any) => {
+      console.log('Data', response)
+      this.gifs = response.data;
+    });
   }
 
 }
