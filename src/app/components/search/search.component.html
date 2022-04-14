@@ -1,0 +1,17 @@
+<input type="search" #gif (keyup.enter)="search(gif.value)">
+<div class="container">
+    <div class="gifs-outer">
+        <ul class="gifs-ul">
+            <li *ngFor="let gif of gifs;" class="gif-item">
+                <div class="sizer">
+                    <div class="sizer-inner">
+                        <picture>
+                            <source [src]="gif.images.downsized.url" type="Image">
+                            <img [src]="gif.images.downsized.url" alt="Image">
+                        </picture>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>

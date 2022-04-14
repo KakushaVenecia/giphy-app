@@ -12,4 +12,8 @@ export class GifdataService {
   getTrendingGifs(){
     return this.http.get(`https://api.giphy.com/v1/gifs/trending?api_key=${environment.giphyApiKey}&limit=20`)
   }
+   searchGifs(searchValue:string) {
+    return this.http.get(`https://api.giphy.com/v1/gifs/search?q=${searchValue}&api_key=${environment.giphyApiKey}&limit=20`)
+   }
 }
+
