@@ -1,0 +1,44 @@
+.gifs-outer {
+    height: 140px;
+    margin: 0px;
+    overflow: hidden;
+    width: 100%;
+}
+
+.gifs-ul {
+    overflow-x: scroll;
+    margin: 0px;
+    padding: 0px 6px 0px 0px;
+    white-space: nowrap;
+    text-align: left;
+    height: 160px;
+    list-style: none;
+}
+
+.gif-item:first-of-type {
+    margin-left: 0px;
+}
+
+.gif-item {
+    cursor: pointer;
+    display: inline-block;
+    margin-left: 6px;
+    list-style: none;
+    position: relative;
+    vertical-align: top;
+    z-index: 1;
+}
+
+.sizer {
+    width: 333px;
+    height: 140px;
+    display: block;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.sizer-inner {
+    width: 333px;
+    height: 140px;
+    position: relative;
+}
