@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { GifdataService } from '../../gifdata.service'
 
+
 @Component({
   selector: 'app-search',
   templateUrl: './search.component.html',

@@ -8,11 +8,12 @@
 .gifs-ul {
     overflow-x: scroll;
     margin: 0px;
-    padding: 0px 6px 0px 0px;
+    padding: 0px 6px 6px 0px;
     white-space: nowrap;
     text-align: left;
     height: 160px;
     list-style: none;
+    margin-bottom: 20px;
 }
 
 .gif-item:first-of-type {
